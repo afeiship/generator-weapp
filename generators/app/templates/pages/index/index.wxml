@@ -1,0 +1,9 @@
+<view>
+    <view class="index-view">
+      <text>Index-View</text>
+    </view>
+
+    <view>
+      {{array.length}}
+    </view>
+</view>

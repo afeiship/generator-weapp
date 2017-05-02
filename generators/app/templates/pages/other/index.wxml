@@ -1,0 +1,9 @@
+<view>
+    <view class="other-view">
+      <text>Other-View</text>
+    </view>
+
+    <view>
+      {{otherArray.length}}
+    </view>
+</view>
