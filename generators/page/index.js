@@ -31,15 +31,16 @@ module.exports = class extends Generator {
   }
 
   _writingTplFiles () {
-    yoHelper.rename(this, 'template', `${this.props.page_name}`);
+    yoHelper.rename(this, 'template', 'index');
     this.fs.copyTpl(
       this.templatePath(),
-      this.destinationPath('./pages'),
+      this.destinationPath(`./pages/${this.props.page_name}/`),
       this.props
     );
   }
 
   install () {
     console.log('Use `yarn install`');
+    console.log(`Add "pages/${this.props.page_name}/index" to your app.json`);
   }
 };
