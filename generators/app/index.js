@@ -11,6 +11,13 @@ module.exports = class extends Generator {
       'Welcome to the striking ' + chalk.red('generator-fei-nodejs') + ' generator!'
     ));
 
+    this.argument('dir', {
+      type: String,
+      desc: "Your app dir",
+      defaults: 'src',
+      required: false
+    })
+
     var prompts = [{
       type: 'input',
       name: 'project_name',
@@ -25,6 +32,10 @@ module.exports = class extends Generator {
       name:'app_bar_title',
       message:'Your project app bar title?'
     }];
+
+    console.log(
+      this.argument('dir')
+    );
 
     return this.prompt(prompts).then( (props) => {
       this.props = props;
