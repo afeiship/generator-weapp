@@ -1,45 +1,49 @@
 'use strict';
-const fs = require('fs');
-const rename = require("gulp-rename");
-const path = require('path');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const yoHelper = require('yeoman-generator-helper');
 const Generator = require('yeoman-generator');
 
 module.exports = class extends Generator {
-  prompting(){
+  prompting() {
     // Have Yeoman greet the user.
     this.log(yosay(
       'Welcome to the striking ' + chalk.red('generator-fei-nodejs') + ' generator!'
     ));
 
-    var prompts = [{
+    this.option('dir', {
+      type: String,
+      alias: 'd',
+      description: 'Your page base dir',
+      default: './src/pages'
+    });
+
+    const prompts = [{
       type: 'input',
       name: 'page_name',
       message: 'Your page_name?',
       default: yoHelper.discoverRoot
     }];
 
-    return this.prompt(prompts).then( (props) => {
+    return this.prompt(prompts).then((props) => {
       this.props = props;
     });
   }
 
-  writing () {
+  writing() {
     this._writingTplFiles();
   }
 
-  _writingTplFiles () {
+  _writingTplFiles() {
     yoHelper.rename(this, 'template', 'index');
     this.fs.copyTpl(
       this.templatePath(),
-      this.destinationPath(`./pages/${this.props.page_name}/`),
+      this.destinationPath(`${this.options.dir}/${this.props.component_name}/`),
       this.props
     );
   }
 
-  install () {
+  install() {
     console.log('Use `yarn install`');
     console.log(`Add "pages/${this.props.page_name}/index" to your app.json`);
   }
