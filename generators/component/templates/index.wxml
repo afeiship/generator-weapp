@@ -1,0 +1,5 @@
+<view class="inner">
+  <text>{{innerText}}</text>
+  <text class="{{className}}">PADDING - TEST = [{{className}}]</text>
+  <image src="{{img}}"  class="cRed wp-1" />
+</view>
