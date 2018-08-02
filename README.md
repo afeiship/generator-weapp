@@ -11,16 +11,13 @@ npm link
 
 
 ## usage:
-+ create weapp:
 ```bash
+## app:
 yo weapp
-```
-+ yo weapp:page
-```bash
-yo weap:page --d=src/pages
-```
 
-+ yo weapp:component
-```bash
-yo weap:page --d=src/components
+## page:
+yo weapp:page --d=src/pages
+
+## component:
+yo weapp:component --d=src/components
 ```
