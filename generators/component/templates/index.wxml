@@ -1,4 +1,4 @@
-<view class="inner">
+<view class="<%=  component_name %>">
   <text>{{innerText}}</text>
   <text class="{{className}}">PADDING - TEST = [{{className}}]</text>
   <image src="{{img}}"  class="cRed wp-1" />
