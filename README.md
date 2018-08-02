@@ -19,5 +19,5 @@ yo weapp
 yo weapp:page --d=src/pages
 
 ## component:
-yo weapp:component --d=src/components
+yo weapp:component --d=src/components/views
 ```
