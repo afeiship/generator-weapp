@@ -20,4 +20,7 @@ yo weapp:page --d=src/pages
 
 ## component:
 yo weapp:component --d=src/components/views
+
+## bower_component:
+yo weapp:bower_component
 ```

@@ -1,0 +1,22 @@
+{
+  "name": "<%= project_name %>",
+  "homepage": "https://github.com/afeiship/<%= project_name %>",
+  "authors": [
+    "afeiship <1290657123@qq.com>"
+  ],
+  "description": "<%= "description" %>",
+  "main": "index.js",
+  "keywords": [
+    "weapp",
+    "wechat",
+    "mini"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

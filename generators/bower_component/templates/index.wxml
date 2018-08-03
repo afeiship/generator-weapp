@@ -1,0 +1,1 @@
+<button bindgetuserinfo="auth" class="<%= project_name %>" open-type="getUserInfo"/>
