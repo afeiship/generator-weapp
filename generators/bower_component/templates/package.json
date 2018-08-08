@@ -1,0 +1,32 @@
+{
+  "name": "<%= project_name %>",
+  "version": "1.0.0",
+  "description": "<%= "description" %>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/<%= project_name %>.git"
+  },
+  "keywords": [
+    "wechat",
+    "weixin",
+    "weapp"
+  ],
+  "author": "afei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/<%= project_name %>/issues"
+  },
+  "homepage": "https://github.com/afeiship/<%= project_name %>#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
