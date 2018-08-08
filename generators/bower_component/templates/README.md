@@ -18,7 +18,7 @@ bower install --save afeiship/<%= project_name %>
 {
   "navigationBarTitleText": "YOUR PAGE TITLE",
   "usingComponents": {
-    "auth-user-info": "../../bower_components/<%= project_name %>/dist/index"
+    "<%= project_name %>": "../../bower_components/<%= project_name %>/dist/index"
   }
 }
 ```
