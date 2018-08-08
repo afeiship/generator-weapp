@@ -43,6 +43,8 @@ module.exports = class extends Generator {
     const { project_name } = this.props;
     console.log(
       `
+      // USAGE:(Copy to your project)
+
       "usingComponents": {
           "${project_name}": "../../bower_components/${project_name}/dist/index"
       }
