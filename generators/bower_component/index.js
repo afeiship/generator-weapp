@@ -42,7 +42,7 @@ module.exports = class extends Generator {
   end(){
     const { project_name } = this.props;
     console.log(
-      `[Add this to your project:]"${project_name}": "../../bower_components/${project_name}/dist/index"`
+      `[Add this to your project] "${project_name}": "../../bower_components/${project_name}/dist/index"`
     )
   }
 };
