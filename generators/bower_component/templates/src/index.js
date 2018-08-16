@@ -1,12 +1,10 @@
 Component({
   properties: {
-    visible: {
-      type: Boolean,
-      value: true
-    }
+    className: {
+      type: String,
+      value: ''
+    },
   },
   methods: {
-    auth() {
-    }
   }
 });

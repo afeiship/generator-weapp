@@ -1,1 +1,3 @@
-<button bindgetuserinfo="auth" class="<%= project_name %>" open-type="getUserInfo"/>
+<view class="<%= project_name %> {{className}}">
+    <slot></slot>
+</view>
