@@ -4,7 +4,7 @@
 ## install:
 + install generator:
 ```bash
-npm install -g afeiship/generator-weapp 
+git clone git@github.com:afeiship/generator-weapp.git
 cd generator-weapp
 npm link
 ```
