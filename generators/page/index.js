@@ -38,7 +38,7 @@ module.exports = class extends Generator {
     yoHelper.rename(this, 'template', 'index');
     this.fs.copyTpl(
       this.templatePath(),
-      this.destinationPath(`${this.options.dir}/${this.props.component_name}/`),
+      this.destinationPath(`${this.options.dir}/${this.props.page_name}/`),
       this.props
     );
   }
