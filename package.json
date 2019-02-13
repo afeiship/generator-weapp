@@ -33,21 +33,6 @@
     "yeoman-generator-helper": "github:afeiship/yeoman-generator-helper",
     "yosay": "^2.0.0"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "scripts": {
-    "prepublish": "nsp check",
-    "pretest": "eslint . --fix",
-    "test": "jest"
-  },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "jest": true,
-      "node": true
-    }
-  },
   "repository": "git@github.com:afeiship/generator-weapp.git",
   "license": "MIT"
 }
