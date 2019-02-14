@@ -1,16 +1,12 @@
-Component({
+nx.Component({
   properties: {
-    innerText: {
-      type: String,
-      value: 'default value',
-    },
-    img: {
-      type: String,
-      value: 'http://placeholder.qiniudn.com/80x80'
+    size: {
+      type: Number,
+      value: 10
     },
     className: {
       type: String,
-      value: 'cRed'
+      value: ''
     }
-  },
+  }
 });
