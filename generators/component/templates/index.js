@@ -1,4 +1,7 @@
 nx.Component({
+  options: {
+    addGlobalClass: true
+  },
   properties: {
     size: {
       type: Number,
