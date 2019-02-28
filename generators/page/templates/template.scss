@@ -1,3 +1,8 @@
-.template-view{
-  color:#f00;
+page,
+.page {
+  background: #f2f2f2;
+  height: 100%;
+}
+.<%= page_name %> {
+  color: #f00;
 }

@@ -1,5 +1,3 @@
-<view>
-    <view class="template-view">
-      <text>template-View</text>
-    </view>
+<view class="page <%= page_name %>">
+  <text>template-View</text>
 </view>
