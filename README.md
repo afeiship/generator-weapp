@@ -6,7 +6,12 @@
 ```bash
 git clone git@github.com:afeiship/generator-weapp.git
 cd generator-weapp
+npm install
 npm link
+
+# or you need:
+sudo npm install
+sudo npm link
 ```
 
 
