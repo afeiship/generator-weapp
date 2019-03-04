@@ -4,8 +4,14 @@
 ## install:
 + install generator:
 ```bash
+# install yeoman:
+npm install -g yo
+
+# install project:
 git clone git@github.com:afeiship/generator-weapp.git
 cd generator-weapp
+
+## link:
 npm install
 npm link
 
